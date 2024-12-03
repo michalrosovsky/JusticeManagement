@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ow5zuVpDytMLx+t6x0W7untcYShy8zaDHs7jsqBvFqLIVk3FiZtaLYgx+PbaO9/j+hHjY1ab3MzeRIwRzIY7TQ==",
+  "dgSpecHash": "/3YBNaoyVD2keOyr5uOpRemlOL4KPjM9SHQXvZ/vIdIoPzh5zeS36cLAW9ajp1zg80AsBBcCjLKwKpYelEKpGQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\P0033461\\Documents\\JusticeManagement\\JusticeManagement\\Case.csproj",
+  "projectFilePath": "C:\\Users\\P0033461\\Documents\\JusticeManagement\\server\\JusticeManagement\\Case.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\P0033461\\.nuget\\packages\\masstransit\\8.3.2\\masstransit.8.3.2.nupkg.sha512",
     "C:\\Users\\P0033461\\.nuget\\packages\\masstransit.abstractions\\8.3.2\\masstransit.abstractions.8.3.2.nupkg.sha512",
