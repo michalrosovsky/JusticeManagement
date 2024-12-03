@@ -1,0 +1,55 @@
+@if(case){
+    <div class="case-list-item">
+    <div class="row">
+        <div class="row-item case">
+            <span>מספר תיק:</span>
+            <span class="bold">{{case.number}}</span>
+        </div>
+        <div class="row-item">
+            <span>עוסק:</span>
+            <span class="bold">{{case.subject}}</span>
+        </div>
+        <div class="row-item">
+            <span>סוג תיק:</span>
+            <span class="bold">{{case.type}}</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="row-item">
+            <span>תקופת זכאות:</span>
+            <span class="bold">{{case.eligibilityPeriod}}</span>
+        </div>
+        <div class="row-item">
+            <span>תאריך פתיחת תיק:</span>
+            <span class="bold">{{case.openDate | date:'dd.MM.yyyy' }}</span>
+        </div>
+        <div class="row-item">
+            <span>דיון קרוב:</span>
+            <span class="bold">{{case.nextDiscussionDate | date:'dd.MM.yyyy'}}</span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="row-item">
+            <span>מגיש הערר:</span>
+            <span class="bold">{{case.appellant}}</span>
+        </div>
+        <div class="row-item">
+            <span>ב"כ משיבה:</span>
+            <span class="bold">{{case.respondentRepresentative}}</span>
+        </div>
+        <div class="row-item">
+            <span>יו"ר ועדה:</span>
+            <span class="bold">{{case.committeeChair}}</span>
+        </div>
+        <div class="row-item">
+            <span>נציג ציבור:</span>
+            <span class="bold">{{case.publicRepresentative}}</span>
+        </div>
+    </div>
+    <div class="row">
+        
+        <span class="status" [ngClass]="getStatusClass(case.status)"><span class="status-circle" ></span>{{case.status}}</span>
+    </div>
+</div>
+}
+

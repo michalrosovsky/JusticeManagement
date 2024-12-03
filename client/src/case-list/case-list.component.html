@@ -1,0 +1,26 @@
+<div class="case-list">
+    <div class="title">
+        <div>חיפוש תיקים</div>
+        <div class="buttons">
+            <button (click)="filter('')">הכל</button>
+            <button (click)="filter('close')">תיקים סגורים</button>
+            <button (click)="filter('open')">תיקים פתוחים</button>
+            <button (click)="filter('me')">התיקים שלי</button>
+            <button (click)="sort('openDate')">מיין לפי תאריך פתיחה</button>
+            <button (click)="sort('number')">מיין לפי מספר תיק</button>
+            <button (click)="createCase()">יצירת תיק</button>
+        </div>
+    </div>
+
+    <div class="filter"></div>
+    <div class="search-result">
+        <span>תוצאות חיפוש</span>
+        <span>נמצאו {{filteredCases.length}} תוצאות</span>
+    </div>
+    <div class="list">
+        @for (case of filteredCases; track case.number)
+        {
+        <app-case-list-item [case]="case"></app-case-list-item>
+        }
+    </div>
+</div>
